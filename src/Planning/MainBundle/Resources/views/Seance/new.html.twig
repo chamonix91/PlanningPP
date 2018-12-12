@@ -1,0 +1,25 @@
+{% extends '@PlanningMain/Template/layout.html.twig' %}
+
+{% block content %}
+    <header class="card-header">
+        <div class="card-actions">
+            <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+            <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+        </div>
+
+        <h2 class="card-title">Seance creation</h2>
+    </header>
+
+
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" value="Create" />
+    {{ form_end(form) }}
+
+    <ul>
+        <li>
+            <a href="{{ path('seance_index') }}">Back to the list</a>
+        </li>
+    </ul>
+{% endblock content %}

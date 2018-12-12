@@ -1,0 +1,11 @@
+planning_main_client:
+    resource: "@PlanningMainBundle/Resources/config/routing/client.yml"
+    prefix:   /client
+
+planning_main_seance:
+    resource: "@PlanningMainBundle/Resources/config/routing/seance.yml"
+    prefix:   /seance
+
+planning_main_homepage:
+    path:     /
+    defaults: { _controller: PlanningMainBundle:Main:index }
